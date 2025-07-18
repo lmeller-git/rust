@@ -139,7 +139,7 @@ pub(crate) mod key {
                 target_family = "unix",
             ),
             all(not(target_thread_local), target_vendor = "apple"),
-            target_os = "teeos",
+            target_os = "teeos", target_os = "tinyos",
             all(target_os = "wasi", target_env = "p1", target_feature = "atomics"),
         ))] {
             mod racy;

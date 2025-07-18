@@ -83,7 +83,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d01597dde41c0b9da50d5f8c219023d63d8f27f39a27095070fd191fddc83891"
 dependencies = [
  "cfg-if",
- "libc 0.2.174",
+ "libc",
  "rustc-std-workspace-core",
  "windows-sys",
 ]
@@ -149,10 +149,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "libc"
-version = "1.0.0-alpha.1"
-
-[[package]]
 name = "memchr"
 version = "2.7.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -190,7 +186,7 @@ dependencies = [
  "alloc",
  "compiler_builtins",
  "core",
- "libc 0.2.174",
+ "libc",
 ]
 
 [[package]]
@@ -201,7 +197,7 @@ dependencies = [
  "cfg-if",
  "compiler_builtins",
  "core",
- "libc 0.2.174",
+ "libc",
  "unwind",
 ]
 
@@ -324,7 +320,7 @@ dependencies = [
  "fortanix-sgx-abi",
  "hashbrown",
  "hermit-abi",
- "libc 1.0.0-alpha.1",
+ "libc",
  "miniz_oxide",
  "object",
  "panic_abort",
@@ -345,7 +341,7 @@ name = "std_detect"
 version = "0.1.5"
 dependencies = [
  "cfg-if",
- "libc 0.2.174",
+ "libc",
  "rustc-std-workspace-alloc",
  "rustc-std-workspace-core",
 ]
@@ -366,7 +362,7 @@ version = "0.0.0"
 dependencies = [
  "core",
  "getopts",
- "libc 0.2.174",
+ "libc",
  "std",
 ]
 
@@ -387,7 +383,7 @@ dependencies = [
  "cfg-if",
  "compiler_builtins",
  "core",
- "libc 0.2.174",
+ "libc",
  "unwinding",
 ]
 
@@ -488,3 +484,8 @@ name = "windows_x86_64_msvc"
 version = "0.52.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
+
+[[patch.unused]]
+name = "libc"
+version = "1.0.0-alpha.1"
+source = "git+https://github.com/lmeller-git/libc.git#891cb8c034c5f4030b5f46167268428e3033b890"

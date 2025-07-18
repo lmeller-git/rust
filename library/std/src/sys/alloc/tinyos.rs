@@ -1,10 +1,9 @@
 use crate::alloc::{GlobalAlloc, Layout, System};
-use crate::sys::pal::abi;
 
 #[stable(feature = "alloc_system_type", since = "1.28.0")]
 unsafe impl GlobalAlloc for System {
     #[inline]
-    unsafe fn alloc(&self, layout: Layout) -> *mut u8 {
+    unsafe fn alloc(&self, _layout: Layout) -> *mut u8 {
         todo!()
     }
 
@@ -14,7 +13,7 @@ unsafe impl GlobalAlloc for System {
     }
 
     #[inline]
-    unsafe fn realloc(&self, ptr: *mut u8, layout: Layout, new_size: usize) -> *mut u8 {
+    unsafe fn realloc(&self, _ptr: *mut u8, _layout: Layout, _new_size: usize) -> *mut u8 {
         todo!()
     }
 }
