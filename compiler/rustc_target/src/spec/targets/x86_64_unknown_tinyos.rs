@@ -6,7 +6,7 @@ pub(crate) fn target() -> Target {
     base.max_atomic_width = Some(64);
 
     Target {
-        llvm_target: "x86_64-unknown-none".into(),
+        llvm_target: "x86_64-unknown-none-elf".into(),
         metadata: TargetMetadata {
             description: Some("TinyOS".into()),
             tier: Some(3),

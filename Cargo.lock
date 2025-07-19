@@ -6721,3 +6721,8 @@ dependencies = [
  "quote",
  "syn 2.0.104",
 ]
+
+[[patch.unused]]
+name = "libc"
+version = "1.0.0-alpha.1"
+source = "git+https://github.com/lmeller-git/libc.git?branch=tinyos-cc#046b2e08b9c891fc988b665cd4da520c0f422b99"

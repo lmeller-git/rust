@@ -488,4 +488,4 @@ checksum = "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec"
 [[patch.unused]]
 name = "libc"
 version = "1.0.0-alpha.1"
-source = "git+https://github.com/lmeller-git/libc.git#891cb8c034c5f4030b5f46167268428e3033b890"
+source = "git+https://github.com/lmeller-git/libc.git?branch=tinyos-cc#046b2e08b9c891fc988b665cd4da520c0f422b99"
